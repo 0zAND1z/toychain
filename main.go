@@ -207,7 +207,7 @@ func handleConn(conn net.Conn) {
 
 	go func() {
 		for {
-			time.Sleep(5 * time.Second)
+			time.Sleep(10 * time.Second)
 			output, err := json.Marshal(Blockchain)
 			if err != nil {
 				log.Fatal(err)
